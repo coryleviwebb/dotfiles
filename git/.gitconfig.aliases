@@ -1,0 +1,14 @@
+# Include in config using the following syntax
+# git config --global include.path "~/.gitconfig.aliases"
+[alias]
+#	Stash all files including untracked
+	stashall = "stash --include-untracked"
+# 	Remove all untracked files and directories
+	pristine = "clean -dfx"
+#	Amend commit without having to rewrite message
+	cane = "commit --amend --no-edit"
+	co = "commit"
+	ll = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative --max-count=10
+#	Remove branches that have been merged into master or develop
+	garderning = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+	
