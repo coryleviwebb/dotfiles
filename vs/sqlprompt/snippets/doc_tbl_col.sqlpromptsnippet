@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>doc_tbl_col</Title>
+      <Shortcut>doc_tbl_col</Shortcut>
+      <Description>Documents a column in a table</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SCHEMA_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TABLE_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>COLUMN_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>COMMENT</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[EXECUTE sp_addextendedproperty
+    @name = N'MS_Description'
+    , @level0type = N'SCHEMA'
+    , @level0name = N'$SCHEMA_NAME$'
+    , @level1type = N'TABLE'
+    , @level1name = N'$TABLE_NAME$'
+    , @level2type = N'COLUMN'
+    , @level2name = N'$COLUMN_NAME$'
+    , @value = N'$COMMENT$';]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

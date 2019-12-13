@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>pm_cp</Title>
+      <Shortcut>pm_cp</Shortcut>
+      <Description>Creates procedure in Pennymac format</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SCHEMA</ID>
+          <ToolTip />
+          <Default>dbo</Default>
+        </Literal>
+        <Literal>
+          <ID>PROC_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[IF OBJECT_ID('$SCHEMA$.$PROC_NAME$') IS NULL
+  EXEC ('CREATE PROCEDURE $SCHEMA$.$PROC_NAME$ AS RETURN 0;');
+
+GO
+
+ALTER PROCEDURE $SCHEMA$.$PROC_NAME$
+AS
+BEGIN
+	$CURSOR$
+
+	RETURN 0;
+END]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

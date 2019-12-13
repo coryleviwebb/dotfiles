@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>doc_sp</Title>
+      <Shortcut>doc_sp</Shortcut>
+      <Description>Documents a stored procedure</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SCHEMA_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>PROC_NAME</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>COMMENT</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[EXECUTE sp_addextendedproperty
+    @name = N'MS_Description'
+  , @level0type = N'SCHEMA'
+  , @level0name = N'$SCHEMA_NAME$'
+  , @level1type = N'PROCEDURE'
+  , @level1name = N'$PROC_NAME$'
+  , @level2type = NULL
+  , @level2name = NULL
+  , @value = N'$COMMENT$';]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
