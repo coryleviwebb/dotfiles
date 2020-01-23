@@ -68,7 +68,7 @@
   <IndentParenthesisedExpression>true</IndentParenthesisedExpression>
   <InsertColumnListParenthesisLayout>ExpandedToStatement</InsertColumnListParenthesisLayout>
   <InsertEmptyLineBetweenJoins>false</InsertEmptyLineBetweenJoins>
-  <InsertValuesListParenthesisLayout>CompactToStatement</InsertValuesListParenthesisLayout>
+  <InsertValuesListParenthesisLayout>ExpandedToStatement</InsertValuesListParenthesisLayout>
   <IsMigratedStyle>false</IsMigratedStyle>
   <JoinBreakType>ChopAlways</JoinBreakType>
   <JoinClauseAlignment>AsPartOfList</JoinClauseAlignment>
@@ -147,7 +147,7 @@
   </SpacesAroundParenthesesContents>
   <SpacesOrTabs>OnlySpaces</SpacesOrTabs>
   <SubsequentInsertColumnsListItemsBreakType>ChopAlways</SubsequentInsertColumnsListItemsBreakType>
-  <SubsequentInsertValuesListItemsBreakType>SimpleWrap</SubsequentInsertValuesListItemsBreakType>
+  <SubsequentInsertValuesListItemsBreakType>ChopIfLong</SubsequentInsertValuesListItemsBreakType>
   <SubsequentListItemsBreakType>ChopAlways</SubsequentListItemsBreakType>
   <UseGlobalListOptionsForDmlStatements>false</UseGlobalListOptionsForDmlStatements>
   <UseObjectDefinitionCase>true</UseObjectDefinitionCase>
