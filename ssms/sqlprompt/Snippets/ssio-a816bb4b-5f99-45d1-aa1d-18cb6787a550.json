@@ -1,0 +1,6 @@
+{
+  "id": "a816bb4b-5f99-45d1-aa1d-18cb6787a550",
+  "prefix": "ssio",
+  "description": "",
+  "body": "SET STATISTICS IO ON;"
+}

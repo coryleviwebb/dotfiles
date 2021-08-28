@@ -1,0 +1,12 @@
+{
+  "id": "f8601e9f-96d3-4cd8-8ff8-d3807b04e8aa",
+  "prefix": "ct",
+  "description": "Create table",
+  "body": "CREATE TABLE $table_name$\n(\n    $CURSOR$\n)",
+  "placeholders": [
+    {
+      "name": "table_name",
+      "defaultValue": "[schema].[table_name]"
+    }
+  ]
+}

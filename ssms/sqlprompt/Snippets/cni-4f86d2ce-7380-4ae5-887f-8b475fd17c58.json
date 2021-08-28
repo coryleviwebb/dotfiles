@@ -1,0 +1,20 @@
+{
+  "id": "4f86d2ce-7380-4ae5-887f-8b475fd17c58",
+  "prefix": "cni",
+  "description": "Create non-unique nonclustered index",
+  "body": "CREATE NONCLUSTERED INDEX $index_name$\nON $owner$ ( $column_name$ )\n--WITH PAD_INDEX\n--    | FILLFACTOR = fillfactor\n--    | IGNORE_DUP_KEY\n--    | DROP_EXISTING\n--    | STATISTICS_NORECOMPUTE\n--    | SORT_IN_TEMPDB, .. as required\n-- ON filegroup\nGO\n",
+  "placeholders": [
+    {
+      "name": "owner",
+      "defaultValue": "[schema].[owner_name]"
+    },
+    {
+      "name": "column_name",
+      "defaultValue": ""
+    },
+    {
+      "name": "index_name",
+      "defaultValue": ""
+    }
+  ]
+}
