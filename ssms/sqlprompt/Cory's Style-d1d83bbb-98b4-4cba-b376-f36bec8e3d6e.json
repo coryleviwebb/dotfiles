@@ -45,7 +45,7 @@
     "placeConstraintsOnNewLines": true,
     "placeConstraintColumnsOnNewLines": "ifLongerOrMultipleColumns",
     "collapseShortStatements": true,
-    "collapseStatementsShorterThan": 120
+    "collapseStatementsShorterThan": 78
   },
   "controlFlow": {
     "collapseStatementsShorterThan": 78
