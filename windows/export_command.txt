@@ -1,0 +1,1 @@
+winget export --accept-source-agreements --output C:\Users\cwebb\OneDrive\Cory\Code\repos\dotfiles\windows\winget.json
