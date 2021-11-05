@@ -1,6 +1,6 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-10-27T18:02:53.641-00:00",
+	"CreationDate" : "2021-11-05T12:13:33.743-00:00",
 	"Sources" : 
 	[
 		{
@@ -10,7 +10,10 @@
 					"PackageIdentifier" : "Amazon.Kindle"
 				},
 				{
-					"PackageIdentifier" : "Canonical.Ubuntu"
+					"PackageIdentifier" : "Anki.Anki"
+				},
+				{
+					"PackageIdentifier" : "Canonical.Ubuntu.2004"
 				},
 				{
 					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskMark"
@@ -88,6 +91,9 @@
 					"PackageIdentifier" : "Google.Chrome"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.PowerToys"
+				},
+				{
 					"PackageIdentifier" : "GPSoftware.DirectoryOpus"
 				},
 				{
@@ -103,9 +109,6 @@
 					"PackageIdentifier" : "Microsoft.AzureStorageExplorer"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
-				},
-				{
 					"PackageIdentifier" : "PointPlanck.FileBot"
 				},
 				{
@@ -113,6 +116,9 @@
 				},
 				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit"
 				},
 				{
 					"PackageIdentifier" : "Nvidia.GeForceExperience"
