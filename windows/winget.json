@@ -13,12 +13,6 @@
 					"PackageIdentifier" : "Anki.Anki"
 				},
 				{
-					"PackageIdentifier" : "Canonical.Ubuntu.2004"
-				},
-				{
-					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskMark"
-				},
-				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
@@ -28,28 +22,13 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
-					"PackageIdentifier" : "HandBrake.HandBrake"
-				},
-				{
 					"PackageIdentifier" : "Implbits.HashTab"
 				},
 				{
 					"PackageIdentifier" : "CodecGuide.K-LiteCodecPack.Full"
 				},
 				{
-					"PackageIdentifier" : "Logitech.Options"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.OneDrive"
 				},
 				{
 					"PackageIdentifier" : "Plex.Plex"
@@ -67,31 +46,13 @@
 					"PackageIdentifier" : "Axosoft.GitKraken"
 				},
 				{
-					"PackageIdentifier" : "qBittorrent.qBittorrent"
-				},
-				{
 					"PackageIdentifier" : "Zoom.Zoom"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2013Redist-x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2010Redist-x64"
-				},
-				{
-					"PackageIdentifier" : "Python.Python.3"
 				},
 				{
 					"PackageIdentifier" : "PrivateInternetAccess.PrivateInternetAccess"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
-				},
-				{
 					"PackageIdentifier" : "Google.Chrome"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
 					"PackageIdentifier" : "GPSoftware.DirectoryOpus"
@@ -112,34 +73,13 @@
 					"PackageIdentifier" : "PointPlanck.FileBot"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2013Redist-x86"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit"
 				},
 				{
-					"PackageIdentifier" : "Nvidia.GeForceExperience"
-				},
-				{
-					"PackageIdentifier" : "Nvidia.PhysX"
-				},
-				{
 					"PackageIdentifier" : "Apple.iTunes"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2010Redist-x86"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.SQLServerManagementStudio"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VC++2015-2019Redist-x64"
 				}
 			],
 			"SourceDetails" : 
