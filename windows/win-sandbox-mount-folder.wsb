@@ -1,0 +1,14 @@
+<!--
+Configuration documentation can be found at: 
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file
+-->
+<Configuration>
+  <VideoInput>Enable</VideoInput>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\Users\cwebb\OneDrive\</HostFolder>
+      <SandboxFolder>C:\onedrive</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+</Configuration>
