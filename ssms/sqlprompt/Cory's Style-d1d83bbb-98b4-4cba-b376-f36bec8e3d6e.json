@@ -12,8 +12,7 @@
     "placeFirstItemOnNewLine": "ifSubsequentItems",
     "alignItemsAcrossClauses": false,
     "alignItemsToTabStops": true,
-    "alignComments": true,
-    "placeCommasBeforeItems": true
+    "alignComments": true
   },
   "parentheses": {
     "parenthesisStyle": "expandedToStatement",
