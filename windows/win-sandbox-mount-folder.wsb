@@ -9,6 +9,7 @@ https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sand
       <HostFolder>C:\Users\cwebb\OneDrive\</HostFolder>
       <SandboxFolder>C:\onedrive</SandboxFolder>
       <ReadOnly>true</ReadOnly>
+      <MemoryInMB>32000</MemoryInMB>
     </MappedFolder>
   </MappedFolders>
 </Configuration>
