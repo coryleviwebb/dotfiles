@@ -23,6 +23,6 @@ Windows Registry Editor Version 5.00
 "HomeButtonEnabled"=dword:00000001
 "HomeButtonPage"="https://www.google.com/"
 
-; Show file extensions
 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
-"HideFileExt"=dword:00000000
+"HideFileExt"=dword:00000000 ; Show file extensions
+"EnableSnapBar"=dword:00000000 ; Disable annoying bar at the top middle of screen
