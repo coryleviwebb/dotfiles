@@ -1,0 +1,12 @@
+{
+  "id": "b01d08b4-ecdb-4f7f-93bc-1b3bceb8f609",
+  "prefix": "cw_rowcount",
+  "description": "Get the table size and row count for a table",
+  "body": "SELECT\r\n    OBJECT_NAME( object_id ) AS TableName,\r\n    SUM( row_count ) AS [RowCount],\r\n    SUM( reserved_page_count ) * 8 AS TotalSpaceKB,\r\n    SUM( reserved_page_count ) * 8 / 1024 AS TotalSpaceMB,\r\n    SUM( reserved_page_count ) * 8 / 1024 / 1024 AS TotalSpaceGB\r\nFROM    sys.dm_db_partition_stats PS\r\nWHERE\r\n    index_id < 2\r\n    AND OBJECTPROPERTYEX( PS.object_id, 'IsMSShipped' ) = 0\r\n    AND OBJECT_NAME( PS.object_id ) = '$TableName$'\r\nGROUP BY object_id\r\nORDER BY TableName;",
+  "placeholders": [
+    {
+      "name": "TableName",
+      "defaultValue": null
+    }
+  ]
+}
