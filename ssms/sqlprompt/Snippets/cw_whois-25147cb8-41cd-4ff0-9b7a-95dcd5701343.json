@@ -1,0 +1,6 @@
+{
+  "id": "25147cb8-41cd-4ff0-9b7a-95dcd5701343",
+  "prefix": "cw_whois",
+  "description": "Runs sp_whoisactive",
+  "body": "EXEC dbo.sp_WhoIsActive\r\n    @get_plans = 1,\r\n    @get_outer_command = 1,\r\n    @get_transaction_info = 1;"
+}
