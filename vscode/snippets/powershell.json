@@ -1,4 +1,13 @@
 {
+	"rs_deploydatabase": {
+		"prefix": "rs_deploydatabase",
+		"description": "Deploys a database locally",
+		"scope": "powershell",
+		"body": [
+			".\\Database-Deploy.ps1 -FilterBySchema '${SchemaName}' ${0:-RecreateDatabases}",
+			""
+		]
+	},
 	"rs_addjob": {
 		"prefix": "rs_addjob",
 		"description": "rs_addjob",
