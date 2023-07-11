@@ -1,0 +1,12 @@
+{
+  "id": "885eb8e2-61c2-4526-bc15-ecf175c1015d",
+  "prefix": "cw_throw",
+  "description": "",
+  "body": "DECLARE @ErrMsg NVARCHAR(MAX) = N'$ErrorMessage$';\r\nTHROW 50000, @ErrMsg, 1;",
+  "placeholders": [
+    {
+      "name": "ErrorMessage",
+      "defaultValue": "A user error has occurred"
+    }
+  ]
+}
