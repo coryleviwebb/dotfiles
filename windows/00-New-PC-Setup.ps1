@@ -58,6 +58,7 @@ $settingsJson | Out-File $settingsPath -Encoding utf8
 
 $apps = @(
     @{name = "Adobe.Acrobat.Reader.64-bit" },
+    @{name = "AgileBits.1Password" },
     @{name = "Amazon.Kindle" },
     @{name = "Anki.Anki" },
     @{name = "Apple.iTunes" },
@@ -72,7 +73,6 @@ $apps = @(
     @{name = "GPSoftware.DirectoryOpus" },
     @{name = "HandBrake.HandBrake" },
     @{name = "Implbits.HashTab" },
-    @{name = "LastPass for Windows Desktop"; source = "msstore" },
     @{name = "LINQPad.LINQPad.6" },
     @{name = "Microsoft.AzureStorageExplorer" },
     # MS Office 365
