@@ -1,6 +1,6 @@
 {
   "id": "b7c05dec-66a5-4345-b73b-30db92255308",
   "prefix": "cw_clearwaits",
-  "description": "",
+  "description": "Clears wait stats on the instance",
   "body": "DBCC SQLPERF('sys.dm_os_wait_stats', CLEAR);"
 }
