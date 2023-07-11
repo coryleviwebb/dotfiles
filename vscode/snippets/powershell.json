@@ -10,14 +10,16 @@
 	},
 	"rs_addjob": {
 		"prefix": "rs_addjob",
-		"description": "rs_addjob",
+		"description": "Deploys a database job locally",
 		"scope": "powershell",
 		"body": [
 			".\\Add-SqlJob.ps1 -Env 'rage' -TargetDbServer 'localhost' `",
 			"    -JobName '${1:JobName}' `",
 			"    -FilePath '${2:PathToJobFile}' `",
 			"    -OwnerAccount 'sa' -JobOperator '${3:JobOperatorName}' -JobOperatorEmail '${4:Email}' -Enabled '${5|1,0|}' `",
-			"#   -JobParams @('')"
+			"#   -JobParams @('')",
+			"",
+			"asdfasdfasdfasdfasdfasdfas"
 		]
 	}
 	// Place your snippets for powershell here. Each snippet is defined under a snippet name and has a prefix, body and 
