@@ -76,7 +76,7 @@ $apps = @(
     # @{name = "LINQPad.LINQPad.6" },
     @{name = "Microsoft.AzureStorageExplorer" },
     # MS Office 365
-    @{name = "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe"; source = "msstore" },
+    @{name = "Microsoft.Office" },
     # @{name = "Microsoft.PowerShell" },
     @{name = "Microsoft.PowerToys" },
     # @{name = "Microsoft.VisualStudioCode" },
