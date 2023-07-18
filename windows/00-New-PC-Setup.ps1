@@ -91,7 +91,7 @@ foreach ($app in $appsToUninstall) {
     $listApp = winget list --exact -q "$($app.name)"
 
     if ($listApp -like "*$($app.name)*"){
-        Write-Output "winget uninstall `"$($app.name)`" --exact --accept-source-agreements"
+        Write-Information "winget uninstall `"$($app.name)`" --exact --accept-source-agreements"
         winget uninstall "$($app.name)" --exact --accept-source-agreements
     }
     else{
