@@ -103,6 +103,9 @@ foreach ($app in $appsToUninstall) {
 Write-Verbose -Message "Enabling: Windows Sandbox"
 Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online -NoRestart
 
+Write-Verbose -Message "Enabling: Windows Subsystem for Linux"
+Enable-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux -Online -NoRestart
+
 # Explorer: Show file extensions by default: Hide: 1, Show: 0
 Write-Verbose -Message "Enabling: Show file extensions by default"
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
