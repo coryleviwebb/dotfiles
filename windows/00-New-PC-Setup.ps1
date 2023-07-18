@@ -68,16 +68,22 @@ foreach ($app in $apps) {
 
 # Get rid of crap
 $appsToUninstall = @(
-        @{name = "Microsoft.BingNews_8wekyb3d8bbwe"},
-        @{name = "Microsoft.BingWeather_8wekyb3d8bbwe"},
-        @{name = "Microsoft.Getstarted_8wekyb3d8bbwe"},
-        @{name = "Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe"},
-        @{name = "Microsoft.Todos_8wekyb3d8bbwe"},
-        @{name = "Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe"},
-        @{name = "Microsoft.YourPhone_8wekyb3d8bbwe"},
-        @{name = "Microsoft.ZuneMusic_8wekyb3d8bbwe"},
-        @{name = "Microsoft.ZuneVideo_8wekyb3d8bbwe"},
-        @{name = "SpotifyAB.SpotifyMusic_zpdnekdrzrea0"}
+    @{name = "Microsoft.BingNews_8wekyb3d8bbwe"},
+    @{name = "Microsoft.BingWeather_8wekyb3d8bbwe"},
+    @{name = "Microsoft.GamingApp_8wekyb3d8bbwe"},
+    @{name = "Microsoft.Getstarted_8wekyb3d8bbwe"},
+    @{name = "Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe"},
+    @{name = "Microsoft.Todos_8wekyb3d8bbwe"},
+    @{name = "Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe"},
+    @{name = "Microsoft.Xbox.TCUI_8wekyb3d8bbwe"},
+    @{name = "Microsoft.XboxGameOverlay_8wekyb3d8bbwe"},
+    @{name = "Microsoft.XboxGamingOverlay_8wekyb3d8bbwe"},
+    @{name = "Microsoft.XboxIdentityProvider_8wekyb3d8bbwe"},
+    @{name = "Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe"},
+    @{name = "Microsoft.YourPhone_8wekyb3d8bbwe"},
+    @{name = "Microsoft.ZuneMusic_8wekyb3d8bbwe"},
+    @{name = "Microsoft.ZuneVideo_8wekyb3d8bbwe"},
+    @{name = "SpotifyAB.SpotifyMusic_zpdnekdrzrea0"}
 );
 
 # Uninstall crap
