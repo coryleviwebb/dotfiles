@@ -76,3 +76,8 @@ Set-PSReadLineKeyHandler -Key F7 `
     }
 }
 
+function New-TemporaryFolder {
+    $TempFolder = Join-Path -Path $ENV:TEMP -ChildPath (New-Guid)
+    
+    return New-Item -Path $TempFolder -ItemType Directory
+}
