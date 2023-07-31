@@ -1,3 +1,9 @@
+[core]
+	editor = \"C:\\Users\\cwebb\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[user]
+	email = cwebb22@gmail.com
+	name = Cory Webb
+
 # Include in config using the following syntax
 # git config --global include.path "~/.gitconfig.aliases"
 [alias]

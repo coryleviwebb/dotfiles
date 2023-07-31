@@ -1,8 +1,11 @@
 #Requires -RunAsAdministrator
-
+Set-StrictMode -Version 'Latest'
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 $InformationPreference = "Continue"
 $VerbosePreference = "Continue"
+
+# We can trust the PSGallery
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
 $apps = @(
     @{name = "Adobe.Acrobat.Reader.64-bit" },
@@ -106,6 +109,10 @@ Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All 
 Write-Verbose -Message "Enabling: Windows Subsystem for Linux"
 Enable-WindowsOptionalFeature -FeatureName Microsoft-Windows-Subsystem-Linux -Online -NoRestart
 
+# Remove Widgets
+Write-Verbose -Message "Remvoing: Widgets"
+Get-AppxPackage *WebExperience* | Remove-AppxPackage
+
 # Explorer: Show file extensions by default: Hide: 1, Show: 0
 Write-Verbose -Message "Enabling: Show file extensions by default"
 Set-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" "HideFileExt" 0
@@ -115,3 +122,4 @@ Write-Verbose -Message "Enabling: Opt-In to Microsoft Update"
 $MU = New-Object -ComObject Microsoft.Update.ServiceManager -Strict
 $MU.AddService2("7971f918-a847-4430-9279-4a52d1efe18d",7,"") | Out-Null
 Remove-Variable MU
+
