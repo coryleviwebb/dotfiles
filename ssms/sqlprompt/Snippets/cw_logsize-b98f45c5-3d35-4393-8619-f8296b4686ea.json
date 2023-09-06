@@ -1,0 +1,6 @@
+{
+  "id": "b98f45c5-3d35-4393-8619-f8296b4686ea",
+  "prefix": "cw_logsize",
+  "description": "Gets the log size for the current database",
+  "body": "SELECT\r\n    DB_NAME( database_id ) AS DbName,\r\n    total_log_size_in_bytes / 1024.0 / 1024 AS total_log_size_in_mb,\r\n    used_log_space_in_bytes / 1024.0 / 1024 AS used_log_space_in_mb,\r\n    total_log_size_in_bytes / 1024.0 / 1024 / 1024 AS total_log_size_in_gb,\r\n    used_log_space_in_bytes / 1024.0 / 1024 / 1024 AS used_log_space_in_gb,\r\n    used_log_space_in_percent\r\nFROM    sys.dm_db_log_space_usage;"
+}
