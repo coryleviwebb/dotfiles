@@ -1,0 +1,6 @@
+{
+  "id": "9de7dc85-c92c-451a-bf38-219f7177554e",
+  "prefix": "cw_beforeloadtest",
+  "description": "",
+  "body": "/* Flush dirty pages from the buffer to the database files. */\r\nCHECKPOINT;\r\n\r\n/* Flush the data cache and procedure cache, respectively. For DEV environments only! */\r\nDBCC DROPCLEANBUFFERS;\r\nDBCC FREEPROCCACHE;\r\n\r\n/* Clear waits */\r\nDBCC SQLPERF('sys.dm_os_wait_stats', CLEAR);\r\n"
+}

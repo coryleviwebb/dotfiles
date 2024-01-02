@@ -1,0 +1,6 @@
+{
+  "id": "54e6f9b9-e611-42fd-b040-edb593d8b0d0",
+  "prefix": "cw_uptime",
+  "description": "",
+  "body": "SELECT  \r\n\tDATEDIFF(HOUR, sqlserver_start_time, SYSUTCDATETIME()) / 24.0 AS [Days Uptime]\r\nFROM    sys.dm_os_sys_info;"
+}
